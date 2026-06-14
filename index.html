@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TapTrio — Support</title>
+<meta name="description" content="Support and help for TapTrio, a relaxing candy-pop number-merge puzzle game for iPhone." />
+<style>
+  :root{
+    --pink:#FF6B9D; --orange:#FFA94D; --yellow:#FFD43B; --green:#69DB7C;
+    --mint:#38D9A9; --blue:#4DABF7; --violet:#748FFC; --grape:#9775FA;
+    --bg:#FFF8FB; --card:#FFFFFF; --ink:#3A2E2E; --muted:#8A7E84;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Rounded","Segoe UI",system-ui,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:32px 20px 64px;}
+  header{text-align:center; padding:48px 0 32px;}
+  .logo{
+    width:96px; height:96px; border-radius:26px; margin:0 auto 20px; display:flex;
+    align-items:center; justify-content:center; font-size:46px; font-weight:900;
+    color:#fff; background:linear-gradient(135deg,var(--pink),var(--orange));
+    box-shadow:0 14px 30px rgba(255,107,157,.35);
+  }
+  h1{font-size:40px; font-weight:900; margin:0 0 8px; letter-spacing:-.5px;}
+  .tagline{font-size:18px; color:var(--muted); margin:0;}
+  .card{
+    background:var(--card); border-radius:24px; padding:28px 28px;
+    margin:18px 0; box-shadow:0 10px 30px rgba(150,117,250,.10);
+  }
+  h2{font-size:22px; font-weight:800; margin:0 0 14px;}
+  .pill{display:inline-block; padding:2px 12px; border-radius:999px; color:#fff;
+    font-size:13px; font-weight:800; margin-bottom:14px;}
+  ul{margin:0; padding-left:20px;}
+  li{margin:8px 0;}
+  .q{font-weight:800; margin:18px 0 4px;}
+  .q:first-child{margin-top:0;}
+  a{color:var(--blue); font-weight:700; text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .contact{
+    text-align:center; background:linear-gradient(135deg,var(--mint),var(--blue));
+    color:#fff;
+  }
+  .contact h2,.contact p{color:#fff;}
+  .btn{
+    display:inline-block; margin-top:12px; padding:12px 26px; border-radius:999px;
+    background:#fff; color:var(--blue); font-weight:800; box-shadow:0 8px 18px rgba(0,0,0,.12);
+  }
+  footer{text-align:center; color:var(--muted); font-size:14px; padding-top:28px;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">3</div>
+      <h1>TapTrio</h1>
+      <p class="tagline">Tap, merge, and pop the numbers ✨</p>
+    </header>
+
+    <section class="card">
+      <span class="pill" style="background:var(--pink)">How to Play</span>
+      <ul>
+        <li>Tap any tile to add <strong>+1</strong> to its number.</li>
+        <li>Connect <strong>3 or more</strong> matching numbers (up, down, left, right) and they merge into a higher tile.</li>
+        <li>Each tap spends energy; every merge gives some back. Run out of energy and the round ends.</li>
+        <li>Chain merges together for big combos and a higher score — then beat your personal best!</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <span class="pill" style="background:var(--violet)">FAQ</span>
+      <p class="q">Does TapTrio need an internet connection?</p>
+      <p>No. TapTrio is 100% offline. There is no account and no sign-in required.</p>
+      <p class="q">Does it collect any of my data?</p>
+      <p>No. TapTrio does not collect, store, or transmit any personal data. Your high score is saved only on your device.</p>
+      <p class="q">Are there ads or in-app purchases?</p>
+      <p>No ads and no in-app purchases.</p>
+      <p class="q">My game isn't working / I found a bug.</p>
+      <p>Please email us with your device model and iOS version and we'll help as soon as we can.</p>
+    </section>
+
+    <section class="card" id="privacy">
+      <span class="pill" style="background:var(--green)">Privacy</span>
+      <p>TapTrio is a fully offline, single-player game. It does <strong>not</strong> collect, use, or share any personal information. No analytics, no tracking, no accounts, no network requests. Your highest score is stored locally on your device and is removed if you delete the app.</p>
+    </section>
+
+    <section class="card contact" id="contact">
+      <h2>Contact &amp; Support</h2>
+      <p>Questions, feedback, or bug reports? We'd love to hear from you.</p>
+      <a class="btn" href="mailto:mario.lijiale@gmail.com">Email Support</a>
+    </section>
+
+    <footer>© 2026 Li Jiale · TapTrio</footer>
+  </div>
+</body>
+</html>
